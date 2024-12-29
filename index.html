@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting - Yengflix v3</title>
+  <style>
+    /* Base styles for the page */
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #222222, #2b2e31);
+      color: #fff;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .redirect-container {
+      max-width: 600px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .spinner {
+      margin: 0 auto 20px;
+      width: 40px;
+      height: 40px;
+      border: 4px solid rgba(255, 255, 255, 0.2);
+      border-top: 4px solid #fff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    .yengflix-logo {
+        color: red;
+    }
+
+    .v3 {
+        color: rgb(186, 143, 0);
+        font-weight: 300;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    a {
+      color: #1e90ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="redirect-container">
+    <div class="spinner"></div>
+    <h1>Redirecting to <span class="yengflix-logo">YENGFLIX</span> <span class="v3">v3</span></h1>
+    <p>You are being redirected to the latest version of <span class="yengflix-logo">YENGFLIX</span><span class="v3">v3</span>. Please wait a moment...</p>
+    <p>If the redirection doesn't happen automatically, <a href="https://yengflix-v3.com">click here</a>.</p>
+  </div>
+
+  <!-- JavaScript for automatic redirection -->
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://yengflix.com";
+    }, 500000); // Redirect after 5 seconds
+  </script>
+</body>
+</html>
